@@ -1,0 +1,30 @@
+###
+GET http://127.0.0.1:5051//health/
+Accept: application/json
+
+###
+
+POST http://127.0.0.1:5051//advertisement/
+Content-Type: application/json
+
+{
+  "title": "4 adv",
+  "description": "4 adv",
+  "owner": "4 owner"
+}
+
+
+###
+
+GET http://127.0.0.1:5051//advertisement/2
+Accept: application/json
+
+
+###
+
+PATCH http://127.0.0.1:5051//advertisement/3
+Content-Type: application/json
+
+{
+  "title": "45 adv"
+}
