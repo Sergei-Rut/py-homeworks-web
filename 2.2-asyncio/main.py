@@ -48,6 +48,7 @@ async def main():
                     data[key] = value
             # print(len(data))
             await insert_people(pool, data.values())
+    await pool.close()
 
 
 if __name__ == '__main__':
