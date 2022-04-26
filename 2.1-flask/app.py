@@ -8,5 +8,5 @@ app.config.from_mapping(SQLALCHEMY_DATABASE_URI=config.POSTGRE_URI)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-import views, models
+# import views, models
 
